@@ -5,13 +5,13 @@
     $login = $_POST['login'];
     $password = $_POST['password'];
     $array = [];
-    if(!preg_match("/^([0-9])+$/", $firstname)) {
+    if(preg_match("/^[а-яА-Яa-zA-Z]+$/u", $firstname)) {
         $a = 1;
     } else {
         $a = [];
         $array[] = 'Имя не должно содержать цифр';
     }
-    if(!preg_match("/^([0-9])+$/", $lastname)) {
+    if(preg_match("/^[а-яА-Яa-zA-Z]+$/u", $lastname)) {
         $b = 1;
     } else {
         $b = [];
