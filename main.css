@@ -4,31 +4,34 @@
     box-sizing: border-box;
 }
 body {
-    height: 75vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Verdana, sans-serif;
 }
-
 form {
     display: flex;
     flex-direction: column;
     width: 400px;
 }
-
 input {
-    margin: 0px 0;
+    margin: 7px 0;
     padding: 7px;
     border: unset;
     border-bottom: 2px solid #e3e3e3;
     outline: none;
 }
-
 button {
     padding: 7px;
     background: #e3e3e3;
     border: unset;
     border-radius: 10px;
     cursor: pointer;
+}
+.msg {
+    margin: 2px 0;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 7px;
 }
