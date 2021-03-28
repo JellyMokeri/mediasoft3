@@ -4,24 +4,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Домашнее задание 3</title>
+        <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="reg-form">
 
     <form action="./" method="post">
-        <p><label>Имя:<br>
-                <input name="firstname" size="30" type="text" placeholder="Введите имя"></label></p>
-        <p><label>Фамилия:<br>
-                <input name="lastname" size="30" type="text" placeholder="Введите фамилию"></label></p>
-        <p><label>Логин:<br>
-                <input name="login" size="30" type="text" placeholder="Введите логин"></label></p>
-        <p><label>Пароль:<br>
-                <input name="password" size="30" type="text" placeholder="Введите пароль"></label></p>
-        <input type="submit" name="send" value="Отправить"><br>
+        <label>Имя</label><br>
+            <input type="text" name="firstname" placeholder="Введите имя"><br>
+        <label>Фамилия</label><br>
+            <input type="text" name="lastname" placeholder="Введите фамилию"><br>
+        <label>Логин</label><br>
+            <input type="text" name="login" placeholder="Введите логин"><br>
+        <label>Пароль</label><br>
+            <input type="password" name="password" placeholder="Введите пароль"><br>
+        <button>Отправить</button><br>
     </form>
 
     <?php $validate = valid($_POST) ?>
